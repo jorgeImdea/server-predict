@@ -1,0 +1,43 @@
+<div class="no-style" style="margin-left: 4px; margin-right: 4px;">
+    <div class="container">
+        <h1>User Form</h1>
+        <form [formGroup]="personForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              id="name"  
+              type="text"
+              class="form-control"
+              required
+              formControlName="name"
+            />
+          </div>
+  
+          <div class="form-group">
+            <label for="target">Target</label>
+            <select
+              id="target"
+              class="form-control"              
+              required
+              formControlName="target"
+            >
+              <option *ngFor="let se of target" [value]="se">{{ se }}</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="times">Time</label>
+            <select 
+                id="time"
+                class="form-control"
+                required 
+                formControlName="time">
+              <option *ngFor="let time of times" [value]="time">{{time}}</option>
+            </select>            
+          </div>
+  
+          <!-- <a routerLink="/home"> -->
+            <button type="submit" class="btn btn-success">Submit</button>
+          <!-- </a>   -->
+        </form>
+    </div>

@@ -1,0 +1,46 @@
+{
+  "name": "server-predictor",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "ng-high-memory": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng build --configuration=test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^16.2.0",
+    "@angular/common": "^16.2.0",
+    "@angular/compiler": "^16.2.0",
+    "@angular/forms": "^16.2.0",
+    "@angular/platform-browser": "^16.2.0",
+    "@angular/platform-browser-dynamic": "^16.2.0",
+    "@angular/router": "^16.2.0",
+    "@types/geojson": "^7946.0.10",
+    "apexcharts": "^3.43.0",
+    "leaflet": "^1.9.4",
+    "ng-apexcharts": "^1.8.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.2",
+    "@angular/cli": "~16.2.2",
+    "@angular/compiler-cli": "^16.2.0",
+    "@angular/core": "^16.2.9",
+    "@types/jasmine": "~4.3.0",
+    "@types/jest": "^29.5.5",
+    "@types/jquery": "^3.5.19",
+    "@types/leaflet": "^1.9.4",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.1.3"
+  }
+}

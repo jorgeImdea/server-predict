@@ -1,0 +1,8 @@
+<ng-container *ngIf="!dataRecived" id="form">
+    <app-user-form></app-user-form>
+</ng-container>
+<ng-container *ngIf="dataRecived" id="form">
+    <app-draw-chart-csv></app-draw-chart-csv>
+</ng-container>
+<!-- <app-draw-chart></app-draw-chart> -->
+
